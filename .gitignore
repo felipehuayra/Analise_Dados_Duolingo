@@ -9,9 +9,8 @@ __pycache__/
 *$py.class
 .ipynb_checkpoints/
 
-# Arquivos de dados pesados (o GitHub bloqueia arquivos > 100 MB)
-data/
-*.csv.gz
+# Arquivos de dados pesados (GitHub bloqueia arquivos > 100 MB)
+data/settles.acl16.learning_traces.13m.csv.gz
 *.csv
 
 # Configurações do editor e do sistema operacional

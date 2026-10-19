@@ -1,3 +1,4 @@
+import os
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -16,7 +17,11 @@ VERMELHO_DUO = "#ff4b4b"
 
 @st.cache_data
 def carregar_dados():
-    df = pd.read_csv("data/settles.acl16.learning_traces.13m.csv.gz", nrows=200_000)
+    caminho_amostra = "data/duolingo_sample_200k.csv.gz"
+    caminho_completo = "data/settles.acl16.learning_traces.13m.csv.gz"
+    caminho = caminho_amostra if os.path.exists(caminho_amostra) else caminho_completo
+
+    df = pd.read_csv(caminho, nrows=200_000)
     df["palavra_limpa"] = df["lexeme_string"].str.split("/").str[0]
     df["dias_sem_revisao"] = df["delta"] / 86400
     
