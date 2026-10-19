@@ -2,6 +2,8 @@
 
 > **Análise Exploratória de Dados e Dashboard Interativo sobre Retenção de Memória, Repetição Espaçada (SRS) e Dificuldade Lexical com dados reais do Duolingo.**
 
+Dashboard: https://felipe-duolingo-analytics.streamlit.app/
+
 ---
 
 ## Sobre o Projeto
@@ -11,6 +13,10 @@ Este projeto analisa o comportamento de estudantes de idiomas no aplicativo Duol
 Além da pesquisa e validação estatística documentada no Jupyter Notebook, foi desenvolvido um dashboard interativo em Streamlit para exploração dinâmica dos dados.
 
 ---
+
+**Fonte:** Duolingo Spaced Repetition Data (Settles & Meeder, 2016), Harvard Dataverse
+- **Tamanho:** ~13 milhões de registros de prática de estudantes reais.
+- **Recorte usado:** amostra de 200.000 linhas do arquivo (5.130 usuários), por limite de memória.
 
 ## Principais Descobertas
 
