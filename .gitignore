@@ -1,0 +1,20 @@
+# Ambiente Virtual
+.venv/
+venv/
+env/
+
+# Caches do Python e do Jupyter
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+
+# Arquivos de dados pesados (o GitHub bloqueia arquivos > 100 MB)
+data/
+*.csv.gz
+*.csv
+
+# Configurações do editor e do sistema operacional
+.vscode/
+.DS_Store
+Thumbs.db
